@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SolutionService } from '../../services/solution.service';
+import { Solution } from '../../models/solution-card.model';
 
 @Component({
   selector: 'app-solutions',
@@ -7,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './solutions.css',
 })
 export class Solutions {
+
+  solutions: Solution[] = [];
+
+  constructor(private solutionService: SolutionService) {
+    this.solutions = this.solutionService.getSolutions();
+  }
 
 }

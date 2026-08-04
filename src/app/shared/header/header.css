@@ -1,39 +1,38 @@
-body {
-  margin: 0;
-  padding: 0;
-}
+      .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+                header {
+            background: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-h2, p {
-  margin: 10px;
-}
+  
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
 
-ul li {
-  float: left;
-}
+        nav a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
 
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 5px 5px;
-    margin: 16px 12px;
-  text-decoration: none;
-}
-.navigation-button{
-  display: block;
-  text-align: center;
-  margin: 14px 16px;
- 
-}
-
-ul li a:hover {
-  background-color: #111111;
-}
+        nav a:hover {
+            color: var(--primary);
+        }
+        .btn-gtintouch{
+          margin-left: 100px;
+        }

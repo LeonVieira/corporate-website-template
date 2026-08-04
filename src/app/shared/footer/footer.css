@@ -1,10 +1,13 @@
-.footer {
-  text-align: center;
-  padding: 3px;
-  background-color: #333333;
-  color: white;
-}
+
 
 a.footer-link:link {color:rgb(60, 143, 129);  text-decoration:none; }
 a.footer-link:visited {color:blue;}
 a.footer-link:hover {font-family:Georgia, 'Times New Roman', Times, serif; color:rgb(67, 33, 219);}
+
+     footer {
+            background: var(--text-dark);
+            color: var(--white);
+            text-align: center;
+
+            margin-top: 4rem;
+        }

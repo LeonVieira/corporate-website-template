@@ -3,7 +3,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal';
 import { Modalinfo } from '../../core/components/modalinfo/modalinfo';
 @Component({
   selector: 'app-header',
-  imports: [Modalinfo],
+  imports: [],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
