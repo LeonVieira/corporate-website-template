@@ -73,3 +73,12 @@
     background:#4F46E5;
 
 }
+
+.testimonial-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+}
