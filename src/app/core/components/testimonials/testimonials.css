@@ -1,17 +1,75 @@
-.testimonial-card{
+.testimonial-carousel{
 
-    max-width:700px;
+    display:flex;
 
-    margin:auto;
+    align-items:center;
 
-    padding:3rem;
+    justify-content:center;
+
+    gap:2rem;
+
+    margin-top:3rem;
+
+}
+
+.carousel-btn{
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
 
     background:white;
 
-    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
 
-    text-align:center;
+    cursor:pointer;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+
+    font-size:22px;
+
+}
+
+.carousel-btn:hover{
+
+    background:#4F46E5;
+
+    color:white;
+
+    transform:scale(1.08);
+
+}
+
+.indicators{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:25px;
+
+    gap:10px;
+
+}
+
+.dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#d1d5db;
+
+}
+
+.active{
+
+    background:#4F46E5;
 
 }
