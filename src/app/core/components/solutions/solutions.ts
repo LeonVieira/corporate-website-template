@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SolutionService } from '../../services/solution.service';
-import { Solution } from '../../models/solution-card.model';
+import { Solution } from '../../models/solution.model';
 
 @Component({
   selector: 'app-solutions',

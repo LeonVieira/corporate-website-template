@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { DashboardCard } from '../models/dashboard-card.model';
+import { DashboardCard } from '../models/dashboard.model';
 
 @Injectable({
   providedIn: 'root'

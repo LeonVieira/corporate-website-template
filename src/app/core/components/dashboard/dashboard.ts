@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DashboardService } from '../../services/dashboard.service';
-import { DashboardCard } from '../../models/dashboard-card.model';
+import { DashboardCard } from '../../models/dashboard.model';
 import { RouterLink } from '@angular/router';
 
 @Component({

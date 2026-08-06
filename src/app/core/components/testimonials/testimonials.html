@@ -1,165 +1,46 @@
+<section class="testimonials">
 
-    <style>
-        :root {
-            --primary: #4F46E5;
-            --primary-hover: #4338CA;
-            --text-dark: #1F2937;
-            --text-light: #6B7280;
-            --bg-light: #F9FAFB;
-            --white: #FFFFFF;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            color: var(--text-dark);
-            line-height: 1.6;
-            background-color: var(--bg-light);
-        }
-
-        header {
-            background: var(--white);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .navbar {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-weight: 700;
-            font-size: 1.5rem;
-            color: var(--primary);
-        }
-
-        nav a {
-            margin-left: 2rem;
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--primary);
-        }
-
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
-            color: var(--white);
-            text-align: center;
-            padding: 6rem 2rem;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            opacity: 0.9;
-        }
-
-        .btn {
-            background: var(--white);
-            color: var(--primary);
-            padding: 0.8rem 2rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 0 2rem;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-title h2 {
-            font-size: 2.25rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-
-   
-</style>
-
-
-    <h1>Testimonials</h1>
-
-
-    <div class="container">
-        <div class="section-title">
-            <h2>Core Features</h2>
-            <p>Everything you need to scale your online presence</p>
-        </div>
-
-        <div class="grid">
-            <div class="card">
-                <h3>Responsive Grid</h3>
-                <p>Built with modern CSS Grid. Adapts perfectly to mobile devices, tablets, and wide desktop screens without bloated frameworks.</p>
-            </div>
-            <div class="card">
-                <h3>Clean Typography</h3>
-                <p>Optimized for readability with well-balanced line-heights, carefully selected font weights, and high-contrast color variables.</p>
-            </div>
-            <div class="card">
-                <h3>Hover Animations</h3>
-                <p>Engage your users with subtle, hardware-accelerated transitions and interactive cards designed to increase conversions.</p>
-            </div>
-        </div>
+    <div class="section-title">
+        <h2>What Our Clients Say</h2>
+        <p>Trusted by businesses across multiple industries.</p>
     </div>
 
+    <div class="carousel">
 
+        <button (click)="previous()">
+            ←
+        </button>
+
+        <div class="testimonial-card">
+
+            <img
+                [src]="testimonials[currentIndex].image"
+                [alt]="testimonials[currentIndex].name">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p class="quote">
+                "{{testimonials[currentIndex].comment}}"
+            </p>
+
+            <h3>
+                {{testimonials[currentIndex].name}}
+            </h3>
+
+            <small>
+                {{testimonials[currentIndex].position}}
+                •
+                {{testimonials[currentIndex].company}}
+            </small>
+
+        </div>
+
+        <button (click)="next()">
+            →
+        </button>
+
+    </div>
+
+</section>
