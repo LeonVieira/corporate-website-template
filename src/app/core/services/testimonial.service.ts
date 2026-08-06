@@ -15,7 +15,7 @@ export class TestimonialService {
             name:"Sarah Johnson",
             position:"Operations Manager",
             company:"Acme Manufacturing",
-            image:"assets/testimonials/sarah.jpg",
+            image:"https://randomuser.me/api/portraits/women/44.jpg",
             rating:5,
             comment:"Interface Systems transformed our workflow and delivered exactly what our business needed."
         },
@@ -25,7 +25,7 @@ export class TestimonialService {
             name:"Michael Brown",
             position:"IT Director",
             company:"BlueWave Technologies",
-            image:"assets/testimonials/michael.jpg",
+            image:"https://randomuser.me/api/portraits/men/32.jpg",
             rating:5,
             comment:"Professional, knowledgeable, and easy to work with from start to finish."
         },
@@ -35,7 +35,7 @@ export class TestimonialService {
             name:"Emily Davis",
             position:"Finance Manager",
             company:"Global Logistics",
-            image:"assets/testimonials/emily.jpg",
+            image:"https://randomuser.me/api/portraits/women/68.jpg",
             rating:5,
             comment:"The custom software has saved us hours of manual work every week."
         }
