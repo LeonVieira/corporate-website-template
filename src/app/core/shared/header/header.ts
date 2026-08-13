@@ -1,6 +1,6 @@
 import { Component, inject, Input } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal';
-import { Modalinfo } from '../../core/components/modalinfo/modalinfo';
+import { Modalinfo } from '../modalinfo/modalinfo';
 @Component({
   selector: 'app-header',
   imports: [],
