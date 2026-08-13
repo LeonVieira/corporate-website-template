@@ -1,16 +1,12 @@
-
-
 <div class="grid">
-
-
-    @for (solution of solutions; track solution.title) {
+  @for (solution of solutions; track solution.title) {
     <div class="card">
       <div class="icon">
         {{ solution.icon }}
       </div>
 
       <h3>{{ solution.title }}</h3>
-
+      <img [src]="solution.image" [alt]="solution.title" />
       <p>{{ solution.description }}</p>
       <a href="#"> Learn More → </a>
     </div>

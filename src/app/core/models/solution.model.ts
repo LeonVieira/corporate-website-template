@@ -1,5 +1,7 @@
 export interface Solution {
-    title: string;
-    description: string;
-    icon: string;
+  title: string;
+  description: string;
+  icon: string;
+  image?: string;
+  route: string;
 }
