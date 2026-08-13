@@ -1,14 +1,43 @@
-<div class="grid">
-  @for (solution of solutions; track solution.title) {
-    <div class="card">
-      <div class="icon">
-        {{ solution.icon }}
-      </div>
+<section class="solutions">
 
-      <h3>{{ solution.title }}</h3>
-      <img [src]="solution.image" [alt]="solution.title" />
-      <p>{{ solution.description }}</p>
-      <a href="#"> Learn More → </a>
-    </div>
-  }
-</div>
+  <div class="section-title">
+    <h2>Featured Solutions</h2>
+    <p>
+      Technology platforms and solutions designed around your business needs.
+    </p>
+  </div>
+
+  <div class="solutions-list">
+
+    @for (solution of solutions; track solution.title; let i = $index) {
+
+      <article class="solution">
+
+        <div class="solution-image">
+          <img
+            [src]="solution.image"
+            [alt]="solution.title"
+          />
+        </div>
+
+        <div class="solution-content">
+
+          <h3>{{ solution.title }}</h3>
+
+          <p>
+            {{ solution.description }}
+          </p>
+
+          <a href="#">
+            Learn More →
+          </a>
+
+        </div>
+
+      </article>
+
+    }
+
+  </div>
+
+</section>

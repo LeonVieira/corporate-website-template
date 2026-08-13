@@ -8,24 +8,27 @@ export class SolutionService {
   getSolutions(): Solution[] {
     return [
       {
-        title: 'Business Consulting',
-        description: '...',
-        icon: '💼',
-        image: 'images/onbasehylandlogo.png',
-        route: '/solutions/document-management',
+  title: 'Business Consulting & Process Automation',
+  description:
+    'Improve business processes, reduce manual work, and build more efficient workflows with practical technology solutions.',
+
+  image: 'images/onbasehylandlogo.png',
+  route: '/solutions/business-consulting',
       },
       {
-        title: 'Software Development',
-        description: '...',
+  title: 'Custom Software Development',
+  description:
+    'Design and develop tailored web and business applications that integrate with your existing systems and support your unique requirements.',
 
-        icon: '💻',
+  
         image: 'images/softwaredevelopment.png',
         route: '/solutions/document-management',
       },
       {
-        title: 'Cloud Services',
-        description: '...',
-        icon: '☁️',
+  title: 'Cloud & Document Management',
+  description:
+    'Modernize document and information management with secure cloud solutions that make your business data easier to access and manage.',
+
         image: 'images/yoozlogo.jpg',
         route: '/solutions/document-management',
       },
