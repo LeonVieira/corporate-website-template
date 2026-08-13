@@ -19,14 +19,14 @@ export class SolutionService {
         description: '...',
 
         icon: '💻',
-        image: 'images/onbasehylandlogo.png',
+        image: 'images/softwaredevelopment.png',
         route: '/solutions/document-management',
       },
       {
         title: 'Cloud Services',
         description: '...',
         icon: '☁️',
-        image: 'images/onbasehylandlogo.png',
+        image: 'images/yoozlogo.jpg',
         route: '/solutions/document-management',
       },
     ];
