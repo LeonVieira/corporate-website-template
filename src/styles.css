@@ -4,21 +4,37 @@
 
 
 :root {
-  --bg-color: #ffffff;
-  --surface-color: #ffffff;
-  --text-color: #172033;
-  --muted-text-color: #667085;
-  --border-color: #e5e7eb;
-  --primary-color: #4f46e5;
+    --bg-color: #ffffff;
+    --surface-color: #ffffff;
+
+    --text-color: #172033;
+    --muted-text-color: #667085;
+
+    --border-color: #e5e7eb;
+
+    --primary-color: #4f46e5;
+
+    --icon-bg: #eef2ff;
+
+    --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    --card-shadow-hover: 0 18px 40px rgba(0, 0, 0, 0.12);
 }
 
 body.dark-mode {
-  --bg-color: #111827;
-  --surface-color: #1f2937;
-  --text-color: #f9fafb;
-  --muted-text-color: #9ca3af;
-  --border-color: #374151;
-  --primary-color: #818cf8;
+    --bg-color: #111827;
+    --surface-color: #1f2937;
+
+    --text-color: #f9fafb;
+    --muted-text-color: #9ca3af;
+
+    --border-color: #374151;
+
+    --primary-color: #818cf8;
+
+    --icon-bg: #312e81;
+
+    --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    --card-shadow-hover: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
 body {
