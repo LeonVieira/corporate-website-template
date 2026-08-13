@@ -1,0 +1,41 @@
+.modal-header {
+  background: var(--surface-color);
+  color: var(--text-color);
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal-title {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.modal-body {
+  background: var(--surface-color);
+  color: var(--text-color);
+
+  padding: 2rem;
+}
+
+.modal-body p {
+  color: var(--muted-text-color);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.modal-footer {
+  background: var(--surface-color);
+
+  border-top: 1px solid var(--border-color);
+}
+
+
+/* Close button */
+
+.btn-close {
+  transition: transform 0.2s ease;
+}
+
+.btn-close:hover {
+  transform: scale(1.1);
+}

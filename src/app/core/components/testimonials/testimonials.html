@@ -1,14 +1,22 @@
 <section class="testimonial-carousel">
+
   <button class="carousel-btn left" (click)="previous()">
     <i class="bi bi-chevron-left"></i>
   </button>
 
   <div class="testimonial-card">
-    <img [src]="testimonials[currentIndex].image" [alt]="testimonials[currentIndex].name" />
+
+    <img
+      class="testimonial-avatar"
+      [src]="testimonials[currentIndex].image"
+      [alt]="testimonials[currentIndex].name"
+    />
 
     <div class="stars">★★★★★</div>
 
-    <p class="quote">"{{ testimonials[currentIndex].comment }}"</p>
+    <p class="quote">
+      "{{ testimonials[currentIndex].comment }}"
+    </p>
 
     <h3>
       {{ testimonials[currentIndex].name }}
@@ -22,12 +30,14 @@
 
     <div class="indicators">
       @for (item of testimonials; track item.id; let i = $index) {
-        <span class="dot" [class.active]="i === currentIndex"> </span>
+        <span class="dot" [class.active]="i === currentIndex"></span>
       }
     </div>
+
   </div>
 
   <button class="carousel-btn right" (click)="next()">
     <i class="bi bi-chevron-right"></i>
   </button>
+
 </section>
