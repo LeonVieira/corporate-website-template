@@ -1,6 +1,7 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal';
 import { Modalinfo } from '../modalinfo/modalinfo';
+
 @Component({
   selector: 'app-header',
   imports: [],
@@ -8,12 +9,23 @@ import { Modalinfo } from '../modalinfo/modalinfo';
   styleUrl: './header.css',
 })
 export class Header {
-	private modalService = inject(NgbModal);
- 
-//These modals use no reference on the html, and will cause a null reference error if you do that.
-//Just something worth remembering but still nice looking modal.
-	open() {
-		const modalRef = this.modalService.open(Modalinfo);
-		modalRef.componentInstance.name = 'Leon Vieira can solve your problems!';
-	}
+
+  private modalService = inject(NgbModal);
+
+  darkMode = false;
+
+  open() {
+    const modalRef = this.modalService.open(Modalinfo);
+    modalRef.componentInstance.name =
+      'Leon Vieira can solve your problems!';
+  }
+
+  toggleDarkMode() {
+    this.darkMode = !this.darkMode;
+
+    document.body.classList.toggle(
+      'dark-mode',
+      this.darkMode
+    );
+  }
 }

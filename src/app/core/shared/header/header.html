@@ -1,16 +1,39 @@
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg">
 
+    <div class="container">
 
+      <a class="navbar-brand" href="#">
+        Brand.
+      </a>
 
-    <header>
-        <div class="navbar">
-            <div class="logo">Brand.</div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-                <a href="#">Solutions</a>
-                <a href="#">Services</a>
-                <button type="button" (click)="open()" class="btn btn-outline-success navigation-button btn-gtintouch">Get In Touch</button>
-            </nav>
-        </div>
+      <div class="navbar-nav ms-auto align-items-center gap-3">
 
-    </header>       
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Products</a>
+        <a class="nav-link" href="#">Solutions</a>
+        <a class="nav-link" href="#">Services</a>
+
+        <button
+          type="button"
+          class="btn btn-outline-success"
+          (click)="open()">
+          Get In Touch
+        </button>
+
+        <button
+          type="button"
+          class="theme-toggle"
+          (click)="toggleDarkMode()"
+          [attr.aria-label]="darkMode ? 'Switch to light mode' : 'Switch to dark mode'">
+
+          {{ darkMode ? '☀️' : '🌙' }}
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </nav>
+</header>
